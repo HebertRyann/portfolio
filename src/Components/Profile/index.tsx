@@ -6,7 +6,7 @@ import {
   WrapperContentProfile,
   ContentProfile,
 } from './styles';
-import Image from 'next/image';
+// import Image from 'next/image';
 import {  FaChevronDown } from 'react-icons/fa';
 import myLoader from '../../utils/loader';
 
@@ -28,14 +28,10 @@ const Profile: React.FC = () => {
           </ContainerButtons>
         </ContentProfile>
 
-          <Image 
-            // loader={myLoader}
-            src="Code typing-rafiki.svg"
+          <image 
+            href="Programming-rafiki.svg"
             width={900} 
             height={900}
-            quality={50}
-            layout="intrinsic"
-            loader={myLoader}
           />
         
       </WrapperContentProfile>
