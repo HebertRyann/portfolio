@@ -29,12 +29,13 @@ const Profile: React.FC = () => {
         </ContentProfile>
 
           <Image 
-            loader={myLoader}
+            // loader={myLoader}
             src="Code typing-rafiki.svg"
             width={900} 
             height={900}
-            quality={100}
+            quality={50}
             layout="intrinsic"
+            loader={myLoader}
           />
         
       </WrapperContentProfile>
