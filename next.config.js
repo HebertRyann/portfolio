@@ -4,6 +4,7 @@ module.exports = {
   },
   images: {
     domains: ['image.freepik.com'],
+    loader: '/portfolio'
   },
   assetPrefix: '/portfolio'
 }
