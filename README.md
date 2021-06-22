@@ -1,34 +1,110 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Começar Essa bagaça
 
-## Getting Started
+# Header {
+# [] - 
+# }
 
-First, run the development server:
+# Main #
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# Footer #
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<Header />
 
-## Learn More
+        <TitleContainer>
+          <ImageContainer/>
+          <h1>Hebert Santos</h1>
+          <p>Desenvolvedor Fullstack</p>
+        </TitleContainer>
 
-To learn more about Next.js, take a look at the following resources:
+        <ContainerAboutMe>
+          <h1>Sobre Mim</h1>
+            <p>
+              Olá, desde pequeno sempre fui apaixonado por tecnologia, 
+              sempre queria criar alguma coisa nova, mas com a falta de habilidade,
+              vinha grandes problemas, erros atras de erros, mas com o google e uma grande força de vontande ao meu lado, 
+              estuda e procura mais informaçoes sobre como resolvelos nao era tao dificl e foi 
+              assim que eu comeicei a apreder mais sobre tecnologia.Estou a procura de uma
+              oportunidade para iniciar minha carreira profissional, evoluir e consolidar meus conhecimentos
+              .Mas nao quero evoluir sozinho quero impulsionar e trazer novas ideias a quem me der esssa oportunidade.
+            </p>
+        </ContainerAboutMe>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+        <ContainerMySkills>
+          <h1>Habilidades</h1>
+          <ContentMySkills>
+          <Skill>
+            <strong>Html</strong>      
+            <FaHtml5 />
+          </Skill>
+          <Skill>
+            <strong>Javascript</strong>      
+            <DiJavascript1 />
+          </Skill>
+          <Skill>
+            <strong>Css</strong>      
+            <DiCss3 />
+          </Skill>
+          <Skill>
+            <strong>React</strong>      
+            <DiReact />
+          </Skill>
+          <Skill>
+            <strong>Next</strong>      
+            <DiCss3 />
+          </Skill>
+          <Skill>
+            <strong>Nodejs</strong>      
+            <DiNodejs />
+          </Skill>
+          <Skill>
+            <strong>SQLlite</strong>      
+            <DiSqllite />
+          </Skill>
+          <Skill>
+            <strong>postgres</strong>      
+            <DiPostgresql />
+          </Skill>
+          <Skill>
+            <strong>MySql</strong>      
+            <DiMysql />
+          </Skill>
+          <Skill>
+            <strong>Redis</strong>      
+            <DiRedis />
+          </Skill>
+          <Skill>
+            <strong>Mongo</strong>      
+            <DiMongodb />
+          </Skill>
+          <Skill>
+            <strong>Typeorm</strong>      
+            <DiDatabase />
+          </Skill>
+          <Skill>
+            <strong>Docker</strong>      
+            <DiDocker />
+          </Skill>
+          <Skill>
+            <strong>Git</strong>      
+            <DiGit />
+          </Skill>
+          <Skill>
+            <strong>Typescript</strong>      
+            <DiJavascript1 />
+          </Skill>
+          </ContentMySkills>
+        </ContainerMySkills>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+        <ContainerProjects>
 
-## Deploy on Vercel
+          <h1>Projetos</h1>
+          <Project>
+            <strong>Nome do projeto</strong>
+            <p>Descriçao do projeto</p>
+            <span>Saber mais</span>
+          </Project>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+        </ContainerProjects>
