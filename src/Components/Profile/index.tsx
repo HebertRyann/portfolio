@@ -7,7 +7,6 @@ import {
   ContentProfile,
 } from './styles';
 import {  FaChevronDown } from 'react-icons/fa';
-import Image from 'next/image';
 
 const Profile: React.FC = () => {
   return (
@@ -27,12 +26,12 @@ const Profile: React.FC = () => {
           </ContainerButtons>
         </ContentProfile>
 
-          <Image 
-            src="/assets/Code typing-rafiki.svg"
+          {/* <Image 
+            src="src/assets/Code typing-rafiki.svg"
             width={900} 
             height={900}
             layout="intrinsic"
-          />
+          /> */}
         
       </WrapperContentProfile>
       <ContainerNextPage>

@@ -7,7 +7,7 @@ import {
 import { LightTheme } from "../styles/stylesConfig";
 import { useEffect, useRef, useState } from "react";
 import { About } from "../Components/About";
-import Image from 'next/image';
+
 import { Projects } from "../Components/Projects";
 import { ContainerOverlay } from "../Components/ContainerOverlay";
 import { ContainersWrapper } from '../Components/Containers/ContainersWrapper';
@@ -17,7 +17,7 @@ import { useInView } from 'react-intersection-observer';
 import React from "react";
 import { ReactNode } from "react";
 import { Profile } from "../Components/Profile";
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 import FormAnimated from "../Components/FormAnimated";
 
 

@@ -4,7 +4,6 @@ import { FaGithub, FaLinkedinIn, FaReact } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 import { LightTheme } from '../../styles/stylesConfig';
 import { useContainer } from '../Containers/useContext';
-import Image from 'next/image';
 import {
   Container,
   Title,
@@ -94,13 +93,13 @@ const About: React.FC = () => {
 
         <ContainerProfile>
             <div className="ContainerProfileImage" onMouseEnter={() => setToggleImage(!toggleImage)}>
-                <Image 
+                {/* <Image 
                   src="/assets/IMG_20210304_191508485.jpg"
                   width={400}
                   height={400}
                   // layout="intrinsic"
                   // className="Default"
-                />
+                /> */}
               {/* {toggleImage ? (
                 <Image 
                   src="/assets/IMG_20210304_191508485.jpg"
