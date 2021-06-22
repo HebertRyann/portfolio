@@ -6,4 +6,5 @@ module.exports = {
   images: {
     domains: ['https://hebertryann.github.io./portfolio'],
   },
+  assetPrefix: '/portfolio'
 }
