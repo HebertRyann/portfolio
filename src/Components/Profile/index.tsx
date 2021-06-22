@@ -28,7 +28,7 @@ const Profile: React.FC = () => {
           </ContainerButtons>
         </ContentProfile>
 
-        <img src="/assets/Code typing-rafiki.svg"  width={500} height={500} />
+        <img src="/portfolio/assets/Code typing-rafiki.svg"  width={500} height={500} />
         
       </WrapperContentProfile>
       <ContainerNextPage>
