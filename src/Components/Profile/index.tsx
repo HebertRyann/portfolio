@@ -8,6 +8,7 @@ import {
 } from './styles';
 import Image from 'next/image';
 import {  FaChevronDown } from 'react-icons/fa';
+import myLoader from '../../utils/loader';
 
 const Profile: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ const Profile: React.FC = () => {
         </ContentProfile>
 
           <Image 
+            loader={myLoader}
             src="portfolio/assets/Code typing-rafiki.svg"
             width={900} 
             height={900}
