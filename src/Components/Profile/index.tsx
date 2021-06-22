@@ -30,9 +30,10 @@ const Profile: React.FC = () => {
 
           <Image 
             loader={myLoader}
-            src="portfolio/assets/Code typing-rafiki.svg"
+            src="Code typing-rafiki.svg"
             width={900} 
             height={900}
+            quality={100}
             layout="intrinsic"
           />
         
