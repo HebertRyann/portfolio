@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { shade } from 'polished';
 import styled, { keyframes } from 'styled-components';
-import { details2, Roboto, RobotoSlab, RobotoTitle } from '../stylesConfig';
+import { RobotoSlab } from '../stylesConfig';
 
 
 const test = keyframes`

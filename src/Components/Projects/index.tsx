@@ -174,9 +174,7 @@ const Projects: React.FC<pros> = ({ style }) => {
             translateX: '-120vw',
           }}}>
             <FaArrowAltCircleLeft 
-              style={{
-                visibility: `${index === 0 ? 'hidden' : 'visible'}`,
-              }}
+
               size={40} 
               color={`var(--color-secundary)`} 
               onClick={previousProject}
