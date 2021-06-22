@@ -5,6 +5,5 @@ module.exports = {
   images: {
     domains: ['image.freepik.com'],
   },
-  basePath: '/',
   assetPrefix: '/portfolio'
 }
