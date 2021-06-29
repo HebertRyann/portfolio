@@ -16,15 +16,6 @@ const Player: React.FC<PlayerProps> = ({ audioSource }) => {
   const isReady = useRef(false);
 
   const { duration } = audioRef.current;
-
-
-  // const toNextTrack = useCallback(() => {
-  //   console.log('Next track');
-  // }, []);
-  // const toPreviousTrack = useCallback(() => {
-  //   console.log('Next track');
-  // }, []);
-
   
 
   const startTimer = () => {

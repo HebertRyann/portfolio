@@ -29,7 +29,7 @@ const Header: React.FC = () => {
       <ContentHeader>
           <ContainerSwitchTheme>
             <ThemeToggle />
-            <Player audioSource="/assets/audios/Aloe Blacc - I Need A Dollar.mp3"/>
+            <Player audioSource="/portfolio/assets/audios/Aloe Blacc - I Need A Dollar.mp3"/>
           </ContainerSwitchTheme>
         </ContentHeader>
     </Container>

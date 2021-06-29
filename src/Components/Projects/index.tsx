@@ -24,44 +24,41 @@ interface pros {
 const propjects = [
   { 
     title: 'DarkThemeToggle', 
-    subTitle: 'interruptor de tema escuro e claro',
-    description: `Clone da e-commmerce da kabum. 
-    Website feito com intuito de consolidar meus conhecimentos em nextjs, 
-    eu refiz o design e acrescentei um carrinho, scroll carrosel, 
-    e contagem regressiva de promoçao`,
+    subTitle: 'Interruptor de tema',
+    description: `Interruptor de temas feito com nextjs, 
+    fazer esse interruptor trouxe um desafio a mais, porque o nextjs trabalha com
+    o lado do servido entao nao tem local storaged para armazernar os temas.
+    mas uma soluçao e usar variaveis css.`,
     imageBackground: ``,
     buttonLink: '',
-    stacks: ['nextjs', 'react', 'typescript']
+    stacks: ['nextjs', 'typescript', 'css3']
   },
   { 
-    title: 'DarkThemeToggle', 
-    subTitle: 'botao para fazer a troca de tema escuro e claro',
-    description: `Clone da e-commmerce da kabum. 
-    Website feito com intuito de consolidar meus conhecimentos em nextjs, 
-    eu refiz o design e acrescentei um carrinho, scroll carrosel, 
-    e contagem regressiva de promoçao`,
+    title: 'Formulario Animado', 
+    subTitle: 'Formulario com animações',
+    description: `Fiz esse projeto para aprender mais sobre css e keyframes,
+    eu fiz no inicio dos meus aprendizados, ele e bem simples.`,
     imageBackground: ``,
-    buttonLink: ''
+    buttonLink: '',
+    stacks: ['Html5', 'Javascript', 'Css3']
   },
   { 
-    title: 'DarkThemeToggle', 
-    subTitle: 'botao para fazer a troca de tema escuro e claro',
-    description: `Clone da e-commmerce da kabum. 
-    Website feito com intuito de consolidar meus conhecimentos em nextjs, 
-    eu refiz o design e acrescentei um carrinho, scroll carrosel, 
-    e contagem regressiva de promoçao`,
+    title: 'BeTheHero', 
+    subTitle: 'Plataforma para ongs',
+    description: `Uma plataforma onde as ongs podem colocar seus casos para ajuda e
+    pessoas podem ver esses casos e ajudar`,
     imageBackground: ``,
-    buttonLink: ''
+    buttonLink: '',
+    stacks: ['Reactjs']
   },
   { 
-    title: 'DarkThemeToggle', 
-    subTitle: 'botao para fazer a troca de tema escuro e claro',
-    description: `Clone da e-commmerce da kabum. 
-    Website feito com intuito de consolidar meus conhecimentos em nextjs, 
-    eu refiz o design e acrescentei um carrinho, scroll carrosel, 
-    e contagem regressiva de promoçao`,
+    title: 'Playerjs', 
+    subTitle: 'Player de audio',
+    description: `Esse projeto tem o intuito de melhorar e aprofundar minhas
+    habilidades em react.`,
     imageBackground: ``,
-    buttonLink: ''
+    buttonLink: '',
+    stacks: ['Reactjs', 'Typescript']
   },
   { 
     title: 'DarkThemeToggle', 
