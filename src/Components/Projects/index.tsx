@@ -62,14 +62,13 @@ const propjects = [
     stacks: ['Reactjs', 'Typescript']
   },
   { 
-    title: 'DarkThemeToggle', 
-    subTitle: 'botao para fazer a troca de tema escuro e claro',
-    description: `Clone da e-commmerce da kabum. 
-    Website feito com intuito de consolidar meus conhecimentos em nextjs, 
-    eu refiz o design e acrescentei um carrinho, scroll carrosel, 
-    e contagem regressiva de promoçao`,
+    title: 'GoBarber', 
+    subTitle: 'Plataforma para barbearias',
+    description: `Uma plataforma onde os barbeiros podem se cadastrar, 
+    e os usuarios atraves da versão mobile podem agendar um horario com qualquer um dos
+    barbeiros.`,
     imageBackground: ``,
-    buttonLink: ''
+    buttonLink: 'https://hebertryann.github.io/gobarberr/'
   },
   { 
     title: 'DarkThemeToggle', 
@@ -255,9 +254,9 @@ const Projects: React.FC<pros> = ({ style }) => {
                     translateX: '-120vw',
                   },
                 }}>
-                <Link href={project.buttonLink}>
+                <a href={project.buttonLink} target="_blank">
                   Visite a Pagina
-                </Link>
+                </a>
               </ContainerButtonProject>
             </AnimateSharedLayout>
           </WrapperContentProject>
