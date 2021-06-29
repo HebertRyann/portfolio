@@ -48,7 +48,7 @@ const propjects = [
     description: `Uma plataforma onde as ongs podem colocar seus casos para ajuda e
     pessoas podem ver esses casos e ajudar`,
     imageBackground: ``,
-    buttonLink: '',
+    buttonLink: 'https://hebertryann.github.io/react-gh-pages/#/',
     stacks: ['Reactjs']
   },
   { 
