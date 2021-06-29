@@ -16,6 +16,7 @@ import {
   ContainerScrollCarrousel,
   WrapperContentProject,
 } from './styles';
+import Link from 'next/link';
 
 interface pros {
   style?: MotionValue;
@@ -254,9 +255,9 @@ const Projects: React.FC<pros> = ({ style }) => {
                     translateX: '-120vw',
                   },
                 }}>
-                <button >
+                <Link href={project.buttonLink}>
                   Visite a Pagina
-                </button>
+                </Link>
               </ContainerButtonProject>
             </AnimateSharedLayout>
           </WrapperContentProject>
