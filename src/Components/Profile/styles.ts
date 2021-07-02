@@ -82,4 +82,5 @@ export const ContainerText = styled.div`
 `;
 
 export const ContentProfile = styled.div`
+  margin-right: 110px;
 `;

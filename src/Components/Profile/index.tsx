@@ -34,7 +34,11 @@ const Profile: React.FC<ProfileProps> = ({ handleScroll }) => {
           </ContainerButtons>
         </ContentProfile>
 
-        <img src="/portfolio/assets/Code typing-rafiki.svg"  width={500} height={500} />
+        <img 
+          src="/portfolio/assets/Code typing-rafiki.svg"  
+          width={900}
+          height={900}
+        />
         
       </WrapperContentProfile>
       <ContainerNextPage onClick={handleScroll}>

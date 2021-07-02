@@ -89,7 +89,7 @@ const Projects: React.FC<ProjectsProps> = ({ refContainer }) => {
 
   return (
     <Container style={{ opacity, translateX }} ref={ref}>
-      <TitleProjects animate={inView ? 'visible' : 'hidden'}
+      <TitleProjects ref={refContainer} animate={inView ? 'visible' : 'hidden'}
         initial='hidden'
         variants={{
           'visible': {
@@ -128,7 +128,7 @@ const Projects: React.FC<ProjectsProps> = ({ refContainer }) => {
           },
         }}>
 
-        <ContentProjectHeader ref={refContainer}>
+        <ContentProjectHeader >
         <AnimateSharedLayout>
           <motion.div
           animate={inView ? 'visible' : 'hidden'}

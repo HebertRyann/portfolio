@@ -31,10 +31,7 @@ interface pros {
 const About: React.FC = () => {
   const { scrollYProgress } = useViewportScroll();
   const { ref, inView } = useInView();
-  const [toggleImage, setToggleImage] = useState(false);
-
-  
-
+ 
   const opacity = useTransform(
     scrollYProgress,
     [0.17,0.4,0.8, 1],
@@ -92,30 +89,12 @@ const About: React.FC = () => {
         }}>
 
         <ContainerProfile>
-            <div className="ContainerProfileImage" onMouseEnter={() => setToggleImage(!toggleImage)}>
-                {/* <Image 
+            <div className="ContainerProfileImage" >
+                <img 
                   src="/assets/IMG_20210304_191508485.jpg"
                   width={400}
                   height={400}
-                  // layout="intrinsic"
-                  // className="Default"
-                /> */}
-              {/* {toggleImage ? (
-                <Image 
-                  src="/assets/IMG_20210304_191508485.jpg"
-                  width={300}
-                  height={300}
-                  layout="intrinsic"
-                  className="Default"
                 />
-              ) : (
-                <Image 
-                  src="/assets/2740494.png"
-                  width={300}
-                  height={300}
-                  className="Cartoon"
-                />
-              )} */}
             </div>
 
             <ContainerSocial>
