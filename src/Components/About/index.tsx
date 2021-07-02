@@ -91,7 +91,7 @@ const About: React.FC = () => {
         <ContainerProfile>
             <div className="ContainerProfileImage" >
                 <img 
-                  src="/assets/IMG_20210304_191508485.jpg"
+                  src="/portfolio/assets/IMG_20210304_191508485.jpg"
                   width={400}
                   height={400}
                 />
