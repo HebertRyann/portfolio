@@ -68,17 +68,19 @@ const propjects = [
     e os usuarios atraves da versão mobile podem agendar um horario com qualquer um dos
     barbeiros.`,
     imageBackground: ``,
-    buttonLink: 'https://hebertryann.github.io/gobarberr/'
+    buttonLink: 'https://hebertryann.github.io/gobarberr/',
+    stacks: ['Reactjs', 'Typescript']
   },
   { 
-    title: 'DarkThemeToggle', 
+    title: 'KabumClone', 
     subTitle: 'botao para fazer a troca de tema escuro e claro',
     description: `Clone da e-commmerce da kabum. 
     Website feito com intuito de consolidar meus conhecimentos em nextjs, 
     eu refiz o design e acrescentei um carrinho, scroll carrosel, 
     e contagem regressiva de promoçao`,
     imageBackground: ``,
-    buttonLink: ''
+    buttonLink: 'https://kabum-clone.vercel.app',
+    stacks: ['Nextjs', 'Typescript']
   },
 ]
 
