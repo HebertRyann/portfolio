@@ -31,13 +31,13 @@ export const TitleProjects = styled(motion.div)`
   font-size: 2rem;
   font-family: 'Roboto';
   font-weight: 400;
-  margin-bottom: 110px;
+  margin-bottom: 250px;
 `;
 
 export const WrapperContentProject = styled.div`
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 60%;
   /* border: 1px solid green; */
   /* height: 70%; */  
   /* margin-left: 80px; */
@@ -64,24 +64,23 @@ export const ContainerImageProject = styled(motion.div)`
 `;
 export const ProjectHeader = styled(motion.div)`
   margin-bottom: 72px;
+  color: var(--color-secundary);
   h1 {
     font-size: 64px;
     font-family: 'Roboto';
     font-weight: 500;
-    color: var(--color-secundary);
     /* width: 400px; */
   }
   h2 {
     font-size: 43px;
     font-family: 'Roboto';
     font-weight: 400;
-    color: var(--color-secundary);
   }
 `;
 export const ContentProjectHeader = styled.div`
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 60%;
   margin: 0 auto;
   /* border: 1px solid red; */
@@ -94,7 +93,7 @@ export const ContentProjectHeader = styled.div`
 `;
 export const ContainerDescription = styled(motion.div)`
   margin-bottom: 110px;
-  width: 80%;
+  width: 100%;
   p {
     font-size: 24px;
     font-family: 'Roboto';
@@ -116,24 +115,6 @@ export const ContentStack = styled.div`
 export const ContainerButtonProject = styled(motion.div)`
   display: flex;
   align-items: center;
-
-  button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-family: 'Roboto';
-    font-weight: 400;
-    height: 72px;
-    width: 200px;
-    border-radius: 5px;
-    background: var(--color-secundary);
-    color: #fff;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      background: ${shade(0.2, '#0066ff')};
-    }
-  }
 `;
 
 export const ContainerScrollCarrousel = styled.div`

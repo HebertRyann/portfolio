@@ -1,6 +1,6 @@
 import { AnimateSharedLayout, MotionValue, useMotionValue, useTransform, useViewportScroll, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight, FaLink } from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight, FaLink } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 import {
   Container,
@@ -16,33 +16,13 @@ import {
   ContainerScrollCarrousel,
   WrapperContentProject,
 } from './styles';
-import Link from 'next/link';
+import { Button } from '../Button';
 
 interface pros {
   style?: MotionValue;
 }
 
 const propjects = [
-  { 
-    title: 'DarkThemeToggle', 
-    subTitle: 'Interruptor de tema',
-    description: `Interruptor de temas feito com nextjs, 
-    fazer esse interruptor trouxe um desafio a mais, porque o nextjs trabalha com
-    o lado do servido entao nao tem local storaged para armazernar os temas.
-    mas uma soluçao e usar variaveis css.`,
-    imageBackground: ``,
-    buttonLink: '',
-    stacks: ['nextjs', 'typescript', 'css3']
-  },
-  { 
-    title: 'Formulario Animado', 
-    subTitle: 'Formulario com animações',
-    description: `Fiz esse projeto para aprender mais sobre css e keyframes,
-    eu fiz no inicio dos meus aprendizados, ele e bem simples.`,
-    imageBackground: ``,
-    buttonLink: '',
-    stacks: ['Html5', 'Javascript', 'Css3']
-  },
   { 
     title: 'BeTheHero', 
     subTitle: 'Plataforma para ongs',
@@ -51,15 +31,6 @@ const propjects = [
     imageBackground: ``,
     buttonLink: 'https://hebertryann.github.io/react-gh-pages/#/',
     stacks: ['Reactjs']
-  },
-  { 
-    title: 'Playerjs', 
-    subTitle: 'Player de audio',
-    description: `Esse projeto tem o intuito de melhorar e aprofundar minhas
-    habilidades em react.`,
-    imageBackground: ``,
-    buttonLink: '',
-    stacks: ['Reactjs', 'Typescript']
   },
   { 
     title: 'GoBarber', 
@@ -73,7 +44,7 @@ const propjects = [
   },
   { 
     title: 'KabumClone', 
-    subTitle: 'botao para fazer a troca de tema escuro e claro',
+    subTitle: 'E-commerce',
     description: `Clone da e-commmerce da kabum. 
     Website feito com intuito de consolidar meus conhecimentos em nextjs, 
     eu refiz o design e acrescentei um carrinho, scroll carrosel, 
@@ -84,8 +55,11 @@ const propjects = [
   },
 ]
 
+interface ProjectsProps {
+  refContainer: React.RefObject<HTMLDivElement>;
+}
 
-const Projects: React.FC<pros> = ({ style }) => {
+const Projects: React.FC<ProjectsProps> = ({ refContainer }) => {
   const [currentIndex, setCurrentIndex] = useState(1);
   const nextProject = () => {
     if(currentIndex === propjects.length - 1) {
@@ -95,7 +69,7 @@ const Projects: React.FC<pros> = ({ style }) => {
     setCurrentIndex(currentIndex + 1)
   };
   const previousProject = () => {
-    // setCurrentIndex(currentIndex - 1)
+    setCurrentIndex(currentIndex - 1)
   };
   const { scrollYProgress } = useViewportScroll();
   const { ref, inView } = useInView();
@@ -103,13 +77,13 @@ const Projects: React.FC<pros> = ({ style }) => {
 
   const opacity = useTransform(
     scrollYProgress,
-    [0.60,1],
+    [0.60,0.9],
     [0, 1]
   );
 
   const translateX = useTransform(
     scrollYProgress,
-    [0.6,1],
+    [0.6,0.9],
     [-500,0]
   );
 
@@ -154,7 +128,7 @@ const Projects: React.FC<pros> = ({ style }) => {
           },
         }}>
 
-        <ContentProjectHeader>
+        <ContentProjectHeader ref={refContainer}>
         <AnimateSharedLayout>
           <motion.div
           animate={inView ? 'visible' : 'hidden'}
@@ -166,16 +140,16 @@ const Projects: React.FC<pros> = ({ style }) => {
               type: 'spring',
               duration: 0.5,
               bounce: 0.3,
-              delay: 0.7,
+              delay: 0.3,
             }
           },
           'hidden': {
             translateX: '-120vw',
           }}}>
-            <FaArrowAltCircleLeft 
+            <FaArrowLeft 
 
               size={40} 
-              color={`var(--color-secundary)`} 
+              color="var(--color-secundary)" 
               onClick={previousProject}
               className="ArrowLeft"
 
@@ -194,7 +168,7 @@ const Projects: React.FC<pros> = ({ style }) => {
                       type: 'spring',
                       duration: 0.5,
                       bounce: 0.3,
-                      delay: 0.7,
+                      delay: 0.3,
                     }
                   },
                   'hidden': {
@@ -226,7 +200,7 @@ const Projects: React.FC<pros> = ({ style }) => {
                       type: 'spring',
                       duration: 0.5,
                       bounce: 0.3,
-                      delay: 0.9,
+                      delay: 0.4,
                     }
                   },
                   'hidden': {
@@ -249,16 +223,17 @@ const Projects: React.FC<pros> = ({ style }) => {
                       type: 'spring',
                       duration: 0.5,
                       bounce: 0.3,
-                      delay: 1.1,
+                      delay: 0.6,
                     }
                   },
                   'hidden': {
                     translateX: '-120vw',
                   },
                 }}>
-                <a href={project.buttonLink} target="_blank">
-                  Visite a Pagina
-                </a>
+                <Button 
+                  href={project.buttonLink}
+                  target="_blank" content="Visite a Pagina"
+                />
               </ContainerButtonProject>
             </AnimateSharedLayout>
           </WrapperContentProject>
@@ -273,16 +248,15 @@ const Projects: React.FC<pros> = ({ style }) => {
             transition: {
               type: 'spring',
               duration: 0.5,
-              bounce: 0.3,
-              delay: 0.7,
+              delay: 0.3,
             }
           },
           'hidden': {
             translateX: '-120vw',
           }}}>
-            <FaArrowAltCircleRight 
+            <FaArrowRight 
               size={40} 
-              color={`var(--color-secundary)`} 
+              color="var(--color-secundary)"
               onClick={nextProject}
               className="ArrowLeft"
 
@@ -302,7 +276,7 @@ const Projects: React.FC<pros> = ({ style }) => {
                 type: 'spring',
                 duration: 1,
                 bounce: 0.3,
-                delay: 3.5,
+                delay: 2.5,
               }
             },
             'hidden': {

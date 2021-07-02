@@ -55,7 +55,7 @@ export const ContainerButtons = styled.div`
     color: var(--color-secundary);
     font-size: 18px;
     background: var(--color-secundary);
-    color: #fff;
+    color: var(--color-background);
     transition: 0.3s ease-in-out;
     & + button {
       margin-left: 50px;
@@ -73,11 +73,11 @@ export const ContainerText = styled.div`
     font-family: ${RobotoSlab};
   }
   span {
-    font-size: 54px;
+    font-size: 50px;
   }
   p {
-    font-family: ${RobotoSlab};
-    font-size: 36px;
+
+    font-size: 32px;
   }
 `;
 

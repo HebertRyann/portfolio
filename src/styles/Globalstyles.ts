@@ -22,14 +22,16 @@ export default createGlobalStyle`
 
   }
   body, body[data-theme="dark"] {
-    --color-text: #f4f4f4;
-    --color-secundary: #892cdc;
-    --color-background: #242421;
+    --color-text: #F4EDE8;
+    --color-secundary: #6BFA8A;
+    --color-complementary: #8766FF;
+    --color-background: #312E38;
   }
   body, body[data-theme="light"] {
     --color-text: #000;
     --color-secundary: #0066ff;
-    --color-background: #fff;
+    --color-complementary: #FF0066;
+    --color-background: #f5f5f5;
   }
 
   body {
@@ -46,5 +48,8 @@ export default createGlobalStyle`
   }
   button, input {
     border: 0;
+  }
+  svg {
+    cursor: pointer;
   }
 `;

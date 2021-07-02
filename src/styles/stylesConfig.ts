@@ -11,9 +11,9 @@ export const LightTheme = {
 
 export const DarkTheme = {
   title: 'dark',
-  body: '#242421',
+  body: '#312E38',
   secundaryColor: '#892cdc',
-  color: '#f4f4f4',
+  color: '#F4EDE8',
 }
 
 // export const lightTheme = {

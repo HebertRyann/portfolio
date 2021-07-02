@@ -9,10 +9,16 @@ import {
 // import Image from 'next/image';
 import {  FaChevronDown } from 'react-icons/fa';
 import myLoader from '../../utils/loader';
+import React from 'react';
 
-const Profile: React.FC = () => {
+interface ProfileProps {
+  handleScroll(): void;
+}
+
+const Profile: React.FC<ProfileProps> = ({ handleScroll }) => {
+
   return (
-    <Container>
+    <Container >
       <WrapperContentProfile>
         <ContentProfile>
           <ContainerText>
@@ -31,7 +37,7 @@ const Profile: React.FC = () => {
         <img src="/portfolio/assets/Code typing-rafiki.svg"  width={500} height={500} />
         
       </WrapperContentProfile>
-      <ContainerNextPage>
+      <ContainerNextPage onClick={handleScroll}>
         <FaChevronDown size={56} color={`var(--color-secundary)`}/>
       </ContainerNextPage>
     </Container>

@@ -82,7 +82,7 @@ export const WrapperContentAbout = styled(motion.div)`
   align-items: center;
   justify-content: space-around;
   margin-top: 80px;
-  margin-bottom: 100px
+  margin-bottom: 80px;
 `;
 export const ContainerProfile = styled(motion.div)`
   display: flex;
@@ -150,11 +150,11 @@ export const ContentSkills = styled(motion.div)`
     font-size: 3rem;
     font-family: ${Roboto};
     font-weight: 400;
-    color: #0066ff;
+    color: var(--color-secundary);
     margin-bottom: 16px;
   }
   div {
-    border-bottom: 2px solid #0066ff;
+    border-bottom: 2px solid var(--color-secundary);
     p {
       font-size: 1.3rem;
       font-family: ${Roboto};
@@ -172,11 +172,11 @@ export const ContainerTools = styled(motion.div)`
     font-size: 3rem;
     font-family: ${Roboto};
     font-weight: 400;
-    color: #FF0066;
+    color: var(--color-complementary);
     margin-bottom: 16px;
   }
   div {
-    border-bottom: 3px solid #FF0066;
+    border-bottom: 3px solid var(--color-complementary);
     p {
       font-size: 1.3rem;
       font-family: ${Roboto};

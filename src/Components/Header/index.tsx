@@ -13,25 +13,29 @@ import {
 import {
   FiMenu,
 } from 'react-icons/fi'
-// import { Player } from '../Player';
 import dynamic from 'next/dynamic';
 const ThemeToggle = dynamic(() => import('../ThemeToggle'), {
   ssr: false,
 });
-const Player = dynamic(() => import('../Player'), {
-  ssr: false,
-});
-
 const Header: React.FC = () => {
 
   return (
     <Container>
       <ContentHeader>
-          <ContainerSwitchTheme>
-            <ThemeToggle />
-            <Player audioSource="/portfolio/assets/audios/Aloe Blacc - I Need A Dollar.mp3"/>
-          </ContainerSwitchTheme>
-        </ContentHeader>
+        <FaGithub
+          size={26}
+          color="var(--color-secundary)"
+        />
+        <FaLinkedinIn 
+          style={{
+            marginRight: '28px',
+            marginLeft: '10px'
+          }}
+          size={26}
+          color="var(--color-secundary)"
+        />
+        <ThemeToggle />
+      </ContentHeader>
     </Container>
   )
 }

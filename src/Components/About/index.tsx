@@ -119,8 +119,8 @@ const About: React.FC = () => {
             </div>
 
             <ContainerSocial>
-              <FaGithub size={36} color={LightTheme.secundaryColor}/>
-              <FaLinkedinIn size={36} color={LightTheme.secundaryColor}/>
+              <FaGithub size={36} color="var(--color-secundary)"/>
+              <FaLinkedinIn size={36} color="var(--color-secundary)"/>
             </ContainerSocial>
 
           </ContainerProfile>
