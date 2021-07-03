@@ -39,11 +39,11 @@ const Footer: React.FC = () => {
           <GrMail size={24}/>
           <span>hebertryann40@gmail.com</span>
         </div>
-        <a href="https://www.linkedin.com/in/hebertryansantos/">
+        <a href="https://www.linkedin.com/in/hebertryansantos/" target="_blank">
           <FaLinkedinIn size={24}/>
           <span>LinkedIn</span>
         </a>
-        <a href="https://github.com/HebertRyann?tab=repositories">
+        <a href="https://github.com/HebertRyann?tab=repositories" target="_blank">
           <FaGithub size={24}/>
           <span>Github</span>
         </a>

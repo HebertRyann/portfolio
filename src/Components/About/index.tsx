@@ -2,6 +2,7 @@ import { AnimateSharedLayout, MotionValue, useAnimation, useElementScroll, useTr
 import { useEffect, useRef, useState } from 'react';
 import { FaGithub, FaLinkedinIn, FaReact } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
+import { useMediaQuery } from 'react-responsive';
 import { LightTheme } from '../../styles/stylesConfig';
 import { useContainer } from '../Containers/useContext';
 import {
@@ -31,10 +32,18 @@ interface pros {
 const About: React.FC = () => {
   const { scrollYProgress } = useViewportScroll();
   const { ref, inView } = useInView();
+  const isMobile = useMediaQuery({
+    query: '(max-width: 1024px)'
+  });
  
-  const opacity = useTransform(
+  const opacityDesktop = useTransform(
     scrollYProgress,
     [0.17,0.4,0.8, 1],
+    [0, 1,1,0]
+  );
+  const opacityMobile = useTransform(
+    scrollYProgress,
+    [0.17,0.4,0.7, 0.8],
     [0, 1,1,0]
   );
 
@@ -44,9 +53,13 @@ const About: React.FC = () => {
     [-500,0, 0, -500]
   );
 
+  useEffect(() => {
+    console.log(scrollYProgress)
+  }, [scrollYProgress]);
+
 
   return (
-    <Container style={{ opacity, translateX }} ref={ref}>
+    <Container style={{ opacity: isMobile ? opacityMobile : opacityDesktop, translateX }} ref={ref}>
 
       <Title 
         animate={inView ? 'visible' : 'hidden'}

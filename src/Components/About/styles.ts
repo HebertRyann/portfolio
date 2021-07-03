@@ -6,11 +6,16 @@ export const Container = styled(motion.div)`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  max-width: 1440px;
-  margin: 0 auto;
+  /* max-width: 1440px;
+  margin: 0 auto; 
   overflow: hidden;
+  */
 
   margin-top: 56px;
+
+  @media(max-width: 1024px) {
+    padding: 0 20px;
+  }
 `;
 
 export const Title = styled(motion.div)`
@@ -20,6 +25,16 @@ export const Title = styled(motion.div)`
     font-size: 4rem;
     font-family: ${Roboto};
     font-weight: 400;
+  }
+
+  @media(max-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    h1 {
+      font-size: 3rem;
+      font-family: ${Roboto};
+      font-weight: 400;
+    }
   }
 `;
 
@@ -83,6 +98,13 @@ export const WrapperContentAbout = styled(motion.div)`
   justify-content: space-around;
   margin-top: 80px;
   margin-bottom: 80px;
+
+  @media(max-width: 1024px) {
+    flex-direction: column;
+    align-items: unset;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
 `;
 export const ContainerProfile = styled(motion.div)`
   display: flex;
@@ -103,10 +125,29 @@ export const ContainerProfile = styled(motion.div)`
       object-fit: cover;
       object-position: center;
     }
-    /* img.Cartoon {
-      object-fit: scale-down;
-      object-position: center 40px;
-    } */
+  }
+
+  @media(max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    div.ContainerProfileImage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      border-radius: 50%;
+      img {
+        object-fit: cover;
+        object-position: center;
+      }
+    }
   }
 `;
 
@@ -137,12 +178,23 @@ export const ContainerTextAbout = styled.div`
   font-size: 1.5rem;
   font-family: 'Roboto';
   font-weight: 400;
+
+  @media(max-width: 1024px) {
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    font-weight: 400;
+  }
 `;
 
 export const ContainerSkills = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  @media(max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
 export const ContentSkills = styled(motion.div)`
@@ -165,6 +217,32 @@ export const ContentSkills = styled(motion.div)`
       margin-top: 48px
     }
   }
+
+  @media(max-width: 1024px) {
+    h1 {
+      font-size: 1.5rem;
+      font-family: ${Roboto};
+      font-weight: 400;
+      color: var(--color-secundary);
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    div {
+      border-bottom: 2px solid var(--color-secundary);
+      p {
+        font-size: 1rem;
+        font-family: ${Roboto};
+        font-weight: 400;
+        margin-bottom: 8px;
+      }
+      & + div {
+        margin-top: 20px
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+  }
 `;
 
 export const ContainerTools = styled(motion.div)`
@@ -185,6 +263,34 @@ export const ContainerTools = styled(motion.div)`
     }
     & + div {
       margin-top: 48px
+    }
+  }
+
+
+  @media(max-width: 1024px) {
+    margin-top: 24px;
+    h1 {
+      font-size: 1.5rem;
+      font-family: ${Roboto};
+      font-weight: 400;
+      color: var(--color-complementary);
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    div {
+      border-bottom: 2px solid var(--color-complementary);
+      p {
+        font-size: 1rem;
+        font-family: ${Roboto};
+        font-weight: 400;
+        margin-bottom: 8px;
+      }
+      & + div {
+        margin-top: 20px
+      }
+      span {
+        font-size: 14px;
+      }
     }
   }
 `;

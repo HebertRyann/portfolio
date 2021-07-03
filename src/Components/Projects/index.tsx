@@ -2,6 +2,7 @@ import { AnimateSharedLayout, MotionValue, useMotionValue, useTransform, useView
 import { useEffect, useState } from 'react';
 import { FaArrowLeft, FaArrowRight, FaLink } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
+import { useMediaQuery } from 'react-responsive';
 import {
   Container,
   TitleProjects,
@@ -61,6 +62,9 @@ interface ProjectsProps {
 
 const Projects: React.FC<ProjectsProps> = ({ refContainer }) => {
   const [currentIndex, setCurrentIndex] = useState(1);
+  const isMobile = useMediaQuery({
+    query: '(max-width: 1024px)'
+  })
   const nextProject = () => {
     if(currentIndex === propjects.length - 1) {
       setCurrentIndex(0);
@@ -80,15 +84,34 @@ const Projects: React.FC<ProjectsProps> = ({ refContainer }) => {
     [0.60,0.9],
     [0, 1]
   );
+  const opacityMobile = useTransform(
+    scrollYProgress,
+    [0.75,0.85],
+    [0, 1]
+  );
 
   const translateX = useTransform(
     scrollYProgress,
     [0.6,0.9],
     [-500,0]
   );
+  const translateXMobile = useTransform(
+    scrollYProgress,
+    [0.6,0.85],
+    [-500,0]
+  );
+
+  useEffect(() => {
+    console.log(isMobile)
+  }, [isMobile]);
 
   return (
-    <Container style={{ opacity, translateX }} ref={ref}>
+    <Container 
+    style={{ 
+      opacity: isMobile ? opacityMobile : opacity, 
+      translateX: isMobile ? translateXMobile : translateX 
+    }} 
+    ref={ref}>
       <TitleProjects ref={refContainer} animate={inView ? 'visible' : 'hidden'}
         initial='hidden'
         variants={{
@@ -147,8 +170,7 @@ const Projects: React.FC<ProjectsProps> = ({ refContainer }) => {
             translateX: '-120vw',
           }}}>
             <FaArrowLeft 
-
-              size={40} 
+              size={isMobile ? 16 : 40} 
               color="var(--color-secundary)" 
               onClick={previousProject}
               className="ArrowLeft"
@@ -176,8 +198,6 @@ const Projects: React.FC<ProjectsProps> = ({ refContainer }) => {
                   },
                 }}
                 >
-                
-
                 <h1>
                   {project.title}
                 </h1>
@@ -255,7 +275,7 @@ const Projects: React.FC<ProjectsProps> = ({ refContainer }) => {
             translateX: '-120vw',
           }}}>
             <FaArrowRight 
-              size={40} 
+              size={isMobile ? 16 : 40} 
               color="var(--color-secundary)"
               onClick={nextProject}
               className="ArrowLeft"

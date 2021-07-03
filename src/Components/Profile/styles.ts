@@ -36,6 +36,14 @@ export const WrapperContentProfile = styled.div`
   width: 100%;
 
   overflow: hidden;
+
+  @media(max-width: 1024px) {
+    margin-left: 0px;
+    justify-content: center;
+    img {
+      display: none;
+    }
+  }
 `;
 
 export const ContainerButtons = styled.div`
@@ -64,6 +72,23 @@ export const ContainerButtons = styled.div`
       /* background: ${shade(0.2, `var(--color-secundary)`)}; */
     }
   }
+
+  @media(max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+
+    button {
+      width: 90%;
+      & + button {
+        margin-left: 0px;
+        margin-top: 24px;
+
+      }
+      &:hover {
+        /* background: ${shade(0.2, `var(--color-secundary)`)}; */
+      }
+    }
+  }
 `;
 
 export const ContainerText = styled.div`
@@ -79,8 +104,27 @@ export const ContainerText = styled.div`
 
     font-size: 32px;
   }
+  
+  @media(max-width: 1024px) {
+    h1 {
+      font-size: 66px;
+      color: var(--color-secundary);
+      font-family: ${RobotoSlab};
+    }
+    span {
+      font-size: 36px;
+    }
+    p {
+
+      font-size: 16px;
+    }
+  }
 `;
 
 export const ContentProfile = styled.div`
   margin-right: 110px;
+
+  @media(max-width: 1024px) {
+    margin: 0;
+  }
 `;
