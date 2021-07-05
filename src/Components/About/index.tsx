@@ -43,8 +43,8 @@ const About: React.FC = () => {
   );
   const opacityMobile = useTransform(
     scrollYProgress,
-    [0.17,0.4,0.7, 0.8],
-    [0, 1,1,0]
+    [0,0.7,0.75,0.8],
+    [1,1,1,0]
   );
 
   const translateX = useTransform(
@@ -55,11 +55,17 @@ const About: React.FC = () => {
 
   useEffect(() => {
     console.log(scrollYProgress)
-  }, [scrollYProgress]);
+    console.log(isMobile)
+  }, [isMobile]);
 
 
   return (
-    <Container style={{ opacity: isMobile ? opacityMobile : opacityDesktop, translateX }} ref={ref}>
+    <Container 
+    style={{ 
+      opacity: isMobile ? opacityMobile : opacityDesktop, 
+      translateX: isMobile ? 0 : translateX 
+    }} 
+    ref={ref}>
 
       <Title 
         animate={inView ? 'visible' : 'hidden'}
@@ -120,13 +126,13 @@ const About: React.FC = () => {
         <ContainerTextAbout>
           <p>
             Desde pequeno sempre fui apaixonado por tecnologia, 
-            sempre queria criar alguma coisa nova, mas com a falta de habilidade,
-            vinha grandes problemas, erros atras de erros, mas com o google e 
-            uma grande força de vontande ao meu lado, 
-            estuda e procura mais informaçoes sobre como resolvelos nao era tao dificl e foi 
-            assim que eu comeicei a apreder mais sobre tecnologia.
-            Terminei de cursas o Bootcamp GoStack da rocketseat, mas o apredizado
-            e continuo, e agora quero evolui ainda mais e me torna um otimo profissional.
+            sempre queria criar algo novo, mas com a falta de habilidade,
+            vinham grandes problemas, erros atrás de erros, mas com muita pesquisa e 
+            uma grande força de vontade, 
+            estuda e procura mais informações sobre como resolvê-los não era tao difícil e foi 
+            assim que eu comecei a aprender mais sobre tecnologia.
+            Terminei de cursa o Bootcamp GoStack da rocketseat, mas o aprendizado
+            e continuo, e agora quero evolui ainda mais e me torna um ótimo profissional.
           </p>
           {/* <ContainerMySkills>
             <TitleSkills>

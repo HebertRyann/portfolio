@@ -23,6 +23,7 @@ export const Container = styled(motion.div)`
   display: flex;
   flex-direction: column;
   height: 100vh;
+  margin-top: 100px;
   /* padding: 30px; */
 `;
 export const TitleProjects = styled(motion.div)`
@@ -42,7 +43,7 @@ export const TitleProjects = styled(motion.div)`
       font-size: 3rem;
       font-family: 'Roboto';
       font-weight: 400;
-      margin-bottom: 48px;
+      margin-bottom: 24px;
     }
   }
 `;
@@ -115,13 +116,13 @@ export const ProjectHeader = styled(motion.div)`
     width: 100%;
     margin: 0 auto;
     h1 {
-      font-size: 3rem;
+      font-size: 2.7rem;
       font-family: 'Roboto';
       font-weight: 500;
       /* width: 400px; */
     }
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-family: 'Roboto';
       font-weight: 400;
     }
@@ -144,10 +145,14 @@ export const ContentProjectHeader = styled.div`
 
   @media(max-width: 1024px) {
     display: flex;
+    align-items: baseline;
     justify-content: space-around;
     width: 100%;
     /* margin: 0 auto; */
     /* border: 1px solid red; */
+    svg {
+      margin-bottom: 8px;
+    }
     svg:nth-child(1) {
       animation: ${arrowLeft} 1s;
     }

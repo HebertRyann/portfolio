@@ -86,18 +86,18 @@ const Projects: React.FC<ProjectsProps> = ({ refContainer }) => {
   );
   const opacityMobile = useTransform(
     scrollYProgress,
-    [0.75,0.85],
-    [0, 1]
+    [0.75,0.8],
+    [0,1]
   );
 
   const translateX = useTransform(
     scrollYProgress,
-    [0.6,0.9],
+    [0,1],
     [-500,0]
   );
   const translateXMobile = useTransform(
     scrollYProgress,
-    [0.6,0.85],
+    [0,1],
     [-500,0]
   );
 
@@ -109,7 +109,7 @@ const Projects: React.FC<ProjectsProps> = ({ refContainer }) => {
     <Container 
     style={{ 
       opacity: isMobile ? opacityMobile : opacity, 
-      translateX: isMobile ? translateXMobile : translateX 
+      translateX: isMobile ? 0 : translateX 
     }} 
     ref={ref}>
       <TitleProjects ref={refContainer} animate={inView ? 'visible' : 'hidden'}

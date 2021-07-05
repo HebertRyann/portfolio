@@ -107,16 +107,16 @@ export const ContainerText = styled.div`
   
   @media(max-width: 1024px) {
     h1 {
-      font-size: 66px;
+      font-size: 60px;
       color: var(--color-secundary);
       font-family: ${RobotoSlab};
     }
     span {
-      font-size: 36px;
+      font-size: 32px;
     }
     p {
 
-      font-size: 16px;
+      font-size: 15px;
     }
   }
 `;

@@ -23,7 +23,7 @@ const test2 = keyframes`
   }
 `;
 
-export const Container = styled(motion.div)`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,7 +31,6 @@ export const Container = styled(motion.div)`
   height: 100%;
 
   overflow: hidden;
-  scroll-snap-type: y mandatory;
 `;
 
 export const WrapperContent = styled.div`

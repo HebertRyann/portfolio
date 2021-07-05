@@ -17,6 +17,21 @@ export const Container = styled(motion.div)`
     padding: 0 20px;
   }
 `;
+export const ContainerMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* max-width: 1440px;
+  margin: 0 auto; 
+  overflow: hidden;
+  */
+
+  margin-top: 56px;
+
+  @media(max-width: 1024px) {
+    padding: 0 20px;
+  }
+`;
 
 export const Title = styled(motion.div)`
   display: flex;
