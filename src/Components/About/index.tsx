@@ -117,8 +117,12 @@ const About: React.FC = () => {
             </div>
 
             <ContainerSocial>
-              <FaGithub size={36} color="var(--color-secundary)"/>
-              <FaLinkedinIn size={36} color="var(--color-secundary)"/>
+              <a href="https://github.com/HebertRyann?tab=repositories" target="_blank">
+                <FaGithub size={36} color="var(--color-secundary)"/>
+              </a>
+              <a href="https://www.linkedin.com/in/hebertryansantos/" target="_blank">
+                <FaLinkedinIn size={36} color="var(--color-secundary)"/>
+              </a>
             </ContainerSocial>
 
           </ContainerProfile>
@@ -127,28 +131,12 @@ const About: React.FC = () => {
           <p>
             Desde pequeno sempre fui apaixonado por tecnologia, 
             sempre queria criar algo novo, mas com a falta de habilidade,
-            vinham grandes problemas, erros atrás de erros, mas com muita pesquisa e 
-            uma grande força de vontade, 
+            eu tive grandes problemas, erros atrás de erros, mas com muita pesquisa e força de vontade, 
             estuda e procura mais informações sobre como resolvê-los não era tao difícil e foi 
             assim que eu comecei a aprender mais sobre tecnologia.
             Terminei de cursa o Bootcamp GoStack da rocketseat, mas o aprendizado
-            e continuo, e agora quero evolui ainda mais e me torna um ótimo profissional.
+            é contínuo, agora quero evolui ainda mais e me torna um ótimo profissional.
           </p>
-          {/* <ContainerMySkills>
-            <TitleSkills>
-              <strong>Ferramentas</strong>
-            </TitleSkills>            
-            <div>
-              <span>---- Front end:</span>
-              <p>
-                Html5, Css3, Javascript, React, Nextjs, Typescript
-              </p>
-            </div>
-            <span>Back end:</span>
-            <p>
-              Nodejs, Postgres, MySql, NoSql, Mongo, TypeOrm, docker
-            </p>
-          </ContainerMySkills> */}
         </ContainerTextAbout>
       </WrapperContentAbout>
       </AnimateSharedLayout>
@@ -174,22 +162,20 @@ const About: React.FC = () => {
             <div>
               <p>Responsividade</p>
               <span>
-                A resposividade ajuda a trazer a mekhir expericia ao usuario em qual
-                querl plataforma
+                Traz a melhor experiencia ao usuario em qualquer dispositivos
               </span>
             </div>
             <div>
-              <p>Responsividade</p>
+              <p>Desempenho</p>
               <span>
-                A resposividade ajuda a trazer a mekhir expericia ao usuario em qual
-                querl plataforma
+                Prezo em trazer a melhor performance independende do tamanho do conteudo.
               </span>
             </div>
             <div>
-              <p>Responsividade</p>
+              <p>Intuitivo</p>
               <span>
-                A resposividade ajuda a trazer a mekhir expericia ao usuario em qual
-                querl plataforma
+                Com um design facil, rapido e simples.
+                Conseguimos trazer a melhor experiencia e beleza ao usuario.
               </span>
             </div>
 
@@ -215,22 +201,19 @@ const About: React.FC = () => {
             <div>
               <p>Javascript(Es6+)</p>
               <span>
-                A resposividade ajuda a trazer a mekhir expericia ao usuario em qual
-                querl plataforma
+                É uma linguagem de programação rápida e flexível
               </span>
             </div>
             <div>
-              <p>Javascript(Es6+)</p>
+              <p>Reactjs</p>
               <span>
-                A resposividade ajuda a trazer a mekhir expericia ao usuario em qual
-                querl plataforma
+              Biblioteca que usa o javascript para trazer interfaces mais rápidas e fluidas.
               </span>
             </div>
             <div>
-              <p>Javascript(Es6+)</p>
+              <p>Nodejs</p>
               <span>
-                A resposividade ajuda a trazer a mekhir expericia ao usuario em qual
-                querl plataforma
+                Biblioteca que torna o uso do javascript do lado do servidor possível, possibilitando a criação de backends simples a robustos.
               </span>
             </div>
           </ContainerTools>
@@ -242,5 +225,5 @@ const About: React.FC = () => {
   )
 }
 
-export { About };
+export default About;
 

@@ -27,32 +27,32 @@ const propjects = [
   { 
     title: 'BeTheHero', 
     subTitle: 'Plataforma para ongs',
-    description: `Uma plataforma onde as ongs podem colocar seus casos para ajuda e
-    pessoas podem ver esses casos e ajudar`,
-    imageBackground: ``,
+    description: `Uma plataforma onde ongs podem compartilhar suas causas e receber doações, 
+    com o aplicativo mobile os usuarios podem fazer o seu cadastro e já podem começar a visualizar
+    todas as causas postadas e ajuda-las.`,
+    imageBackground: `/portfolio/assets/Captura da Web_5-7-2021_225458_hebertryann.github.io`,
     buttonLink: 'https://hebertryann.github.io/react-gh-pages/#/',
-    stacks: ['Reactjs']
+    stacks: ['Reactjs - ', 'Nodejs - ', 'React Native']
   },
   { 
     title: 'GoBarber', 
     subTitle: 'Plataforma para barbearias',
-    description: `Uma plataforma onde os barbeiros podem se cadastrar, 
-    e os usuarios atraves da versão mobile podem agendar um horario com qualquer um dos
+    description: `Uma plataforma onde os barbeiros podem fazer seu cadastro e disponibilizar o seu serviço, 
+    os usuarios atraves do aplicativo mobile podem agendar um horario com qualquer um dos
     barbeiros.`,
-    imageBackground: ``,
+    imageBackground: `/portfolio/assets/Captura da Web_5-7-2021_22557_hebertryann.github.io`,
     buttonLink: 'https://hebertryann.github.io/gobarberr/',
-    stacks: ['Reactjs', 'Typescript']
+    stacks: ['Reactjs - ', 'Typescript', 'Nodejs - ', 'React Native']
   },
   { 
     title: 'KabumClone', 
     subTitle: 'E-commerce',
-    description: `Clone da e-commmerce da kabum. 
-    Website feito com intuito de consolidar meus conhecimentos em nextjs, 
-    eu refiz o design e acrescentei um carrinho, scroll carrosel, 
-    e contagem regressiva de promoçao`,
-    imageBackground: ``,
+    description: `Website feito com intuito de consolidar meus conhecimentos em nextjs, 
+    aprender mais sobre SSR(server-side-rendering) e SEO(search-engine-optmize).
+    Refiz o design, e adicionei outras funcionabilidades`,
+    imageBackground: `/portfolio/assets//portfolio/assets/Captura da Web_5-7-2021_225458_hebertryann.github.io`,
     buttonLink: 'https://kabum-clone.vercel.app',
-    stacks: ['Nextjs', 'Typescript']
+    stacks: ['Nextjs - ', 'Typescript']
   },
 ]
 
@@ -132,7 +132,7 @@ const Projects: React.FC<ProjectsProps> = ({ refContainer }) => {
 
       {propjects.map((project, index) => index === currentIndex && (
         <Project animate={inView ? 'visible' : 'hidden'}
-        key={index}
+        key={project.title}
         initial='hidden'
         variants={{
           'visible': {
@@ -203,9 +203,9 @@ const Projects: React.FC<ProjectsProps> = ({ refContainer }) => {
                 </h1>
                 <h2>{project.subTitle}</h2>
                 <ContainerStack>
-                  <span>Nextjs - </span>
-                  <span>css - </span>
-                  <span>javascript</span>
+                  {project.stacks.map(stack => (
+                    <span key={stack}>{stack}</span>
+                  ))}
                 </ContainerStack>
               </ProjectHeader>
             </AnimateSharedLayout>
@@ -296,14 +296,14 @@ const Projects: React.FC<ProjectsProps> = ({ refContainer }) => {
                 type: 'spring',
                 duration: 1,
                 bounce: 0.3,
-                delay: 2.5,
+                delay: 1.5,
               }
             },
             'hidden': {
               scale: 0,
             },
           }}>
-            <h1>Image Background</h1>
+            <img src={project.imageBackground} alt={project.title} />
           </ContainerImageProject>
         </AnimateSharedLayout>
 
@@ -313,5 +313,5 @@ const Projects: React.FC<ProjectsProps> = ({ refContainer }) => {
   )
 }
 
-export { Projects };
+export default Projects;
 

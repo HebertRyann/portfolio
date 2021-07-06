@@ -17,6 +17,7 @@ export const ContentContact = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 100%;
+
   a {
     display: flex;
     align-items: center;
@@ -33,5 +34,33 @@ export const ContentContact = styled.div`
     cursor: auto;
     margin-right: 16px;
     color: var(--color-secundary);
+  }
+
+  @media(max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    flex: 1;
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--color-text);
+    }
+    div {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--color-text);
+    }
+    svg {
+      cursor: auto;
+      margin-right: 16px;
+      color: var(--color-secundary);
+    }
   }
 `;

@@ -118,7 +118,7 @@ export const WrapperContentAbout = styled(motion.div)`
     flex-direction: column;
     align-items: unset;
     margin-top: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
   }
 `;
 export const ContainerProfile = styled(motion.div)`
@@ -184,7 +184,7 @@ export const ContainerSocial = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  svg:nth-child(2) {
+  a:nth-child(2) {
     margin-left: 16px;
   }
 `;

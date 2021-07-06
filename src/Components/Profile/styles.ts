@@ -51,6 +51,10 @@ export const ContainerButtons = styled.div`
   align-items: center;
   margin-top: 56px;
   width: 100%;
+  a {
+    text-decoration: none;
+    color: var(--color-background);
+  }
   button {
     display: flex;
     align-items: center;
@@ -88,6 +92,7 @@ export const ContainerButtons = styled.div`
         /* background: ${shade(0.2, `var(--color-secundary)`)}; */
       }
     }
+
   }
 `;
 

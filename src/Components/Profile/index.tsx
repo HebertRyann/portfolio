@@ -62,8 +62,8 @@ const Profile: React.FC<ProfileProps> = ({ handleScroll }) => {
             </p>
           </ContainerText>
           <ContainerButtons>
-            <button>Curriculo</button>
-            <button>Projetos</button>
+            <button ><a href="/assets/Curriculo.pdf" download="curriculo.pdf">Curriculo</a></button>
+            <button onClick={handleScroll}>Projetos</button>
           </ContainerButtons>
         </ContentProfile>
 
@@ -81,4 +81,4 @@ const Profile: React.FC<ProfileProps> = ({ handleScroll }) => {
   );
 };
 
-export { Profile };
+export default Profile;

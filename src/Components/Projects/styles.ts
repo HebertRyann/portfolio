@@ -79,6 +79,7 @@ export const Project = styled(motion.div)`
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
+    height: 100%;
   }
 `;
 
@@ -90,9 +91,12 @@ export const ContainerImageProject = styled(motion.div)`
 
   @media(max-width: 1024px) {
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: center;
     width: 100%;
+    border: 1px solid red;
+    margin-top: 24px;
   }
 `;
 export const ProjectHeader = styled(motion.div)`

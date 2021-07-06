@@ -1,18 +1,19 @@
-import Header from "../Components/Header";
 import {
   Container,
 } from '../styles/Home';
 import { useRef } from "react";
-import { About } from "../Components/About";
-
-import { Projects } from "../Components/Projects";
 import React from "react";
-import { Profile } from "../Components/Profile";
-import { Footer } from "../Components/Footer";
+const About = dynamic(() => import('../Components/About'), { ssr: false});
+const Footer = dynamic(() => import('../Components/Footer'), { ssr: false});
+const Profile = dynamic(() => import('../Components/Profile'), { ssr: false});
+const Projects = dynamic(() => import('../Components/Projects'), { ssr: false});
+const Header = dynamic(() => import('../Components/Header'), { ssr: false});
+import dynamic from "next/dynamic";
 
 
 const Home: React.FC = () => {
   const projectRef = useRef<HTMLDivElement>(null);
+
 
   const handleToProject = () => {
     projectRef.current?.scrollIntoView({
