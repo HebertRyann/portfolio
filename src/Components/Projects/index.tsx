@@ -50,7 +50,7 @@ const propjects = [
     description: `Website feito com intuito de consolidar meus conhecimentos em nextjs, 
     aprender mais sobre SSR(server-side-rendering) e SEO(search-engine-optmize).
     Refiz o design, e adicionei outras funcionabilidades`,
-    imageBackground: `/portfolio/assets//portfolio/assets/Captura da Web_5-7-2021_225458_hebertryann.github.io`,
+    imageBackground: `/portfolio/assets/portfolio/assets/Captura da Web_5-7-2021_225458_hebertryann.github.io`,
     buttonLink: 'https://kabum-clone.vercel.app',
     stacks: ['Nextjs - ', 'Typescript']
   },

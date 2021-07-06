@@ -261,6 +261,7 @@ export const ContentSkills = styled(motion.div)`
 `;
 
 export const ContainerTools = styled(motion.div)`
+  width: 100%;
   h1 {
     font-size: 3rem;
     font-family: ${Roboto};
@@ -269,7 +270,7 @@ export const ContainerTools = styled(motion.div)`
     margin-bottom: 16px;
   }
   div {
-    border-bottom: 3px solid var(--color-complementary);
+    border-bottom: 2px solid var(--color-complementary);
     p {
       font-size: 1.3rem;
       font-family: ${Roboto};
@@ -284,6 +285,7 @@ export const ContainerTools = styled(motion.div)`
 
   @media(max-width: 1024px) {
     margin-top: 24px;
+    width: 100%;
     h1 {
       font-size: 1.5rem;
       font-family: ${Roboto};
@@ -293,12 +295,14 @@ export const ContainerTools = styled(motion.div)`
       text-align: center;
     }
     div {
+      width: 100%;
       border-bottom: 2px solid var(--color-complementary);
       p {
         font-size: 1rem;
         font-family: ${Roboto};
         font-weight: 400;
         margin-bottom: 8px;
+        
       }
       & + div {
         margin-top: 20px

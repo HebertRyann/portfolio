@@ -53,12 +53,6 @@ const About: React.FC = () => {
     [-500,0, 0, -500]
   );
 
-  useEffect(() => {
-    console.log(scrollYProgress)
-    console.log(isMobile)
-  }, [isMobile]);
-
-
   return (
     <Container 
     style={{ 
@@ -213,7 +207,7 @@ const About: React.FC = () => {
             <div>
               <p>Nodejs</p>
               <span>
-                Biblioteca que torna o uso do javascript do lado do servidor possível, possibilitando a criação de backends simples a robustos.
+                Biblioteca que torna possível a criação de backends simples aos mais complexos.
               </span>
             </div>
           </ContainerTools>

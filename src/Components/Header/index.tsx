@@ -22,18 +22,22 @@ const Header: React.FC = () => {
   return (
     <Container>
       <ContentHeader>
-        <FaGithub
-          size={26}
-          color="var(--color-secundary)"
-        />
-        <FaLinkedinIn 
-          style={{
-            marginRight: '28px',
-            marginLeft: '10px'
-          }}
-          size={26}
-          color="var(--color-secundary)"
-        />
+        <a href="https://github.com/HebertRyann?tab=repositories" target="_blank">
+          <FaGithub
+            size={26}
+            color="var(--color-secundary)"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/hebertryansantos/" target="_blank">
+          <FaLinkedinIn 
+            style={{
+              marginRight: '28px',
+              marginLeft: '10px'
+            }}
+            size={26}
+            color="var(--color-secundary)"
+          />
+        </a>
         <ThemeToggle />
       </ContentHeader>
     </Container>

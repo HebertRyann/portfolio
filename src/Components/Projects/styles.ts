@@ -95,7 +95,6 @@ export const ContainerImageProject = styled(motion.div)`
     align-items: center;
     justify-content: center;
     width: 100%;
-    border: 1px solid red;
     margin-top: 24px;
   }
 `;
