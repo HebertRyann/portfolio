@@ -30,7 +30,7 @@ const propjects = [
     description: `Uma plataforma onde ongs podem compartilhar suas causas e receber doações, 
     com o aplicativo mobile os usuarios podem fazer o seu cadastro e já podem começar a visualizar
     todas as causas postadas e ajuda-las.`,
-    imageBackground: `/portfolio/assets/Captura da Web_5-7-2021_225458_hebertryann.github.io`,
+    imageBackground: `/portfolio/assets/bethehero.jpeg`,
     buttonLink: 'https://hebertryann.github.io/react-gh-pages/#/',
     stacks: ['Reactjs - ', 'Nodejs - ', 'React Native']
   },
@@ -40,7 +40,7 @@ const propjects = [
     description: `Uma plataforma onde os barbeiros podem fazer seu cadastro e disponibilizar o seu serviço, 
     os usuarios atraves do aplicativo mobile podem agendar um horario com qualquer um dos
     barbeiros.`,
-    imageBackground: `/portfolio/assets/Captura da Web_5-7-2021_22557_hebertryann.github.io`,
+    imageBackground: `/portfolio/assets/gobarber.jpeg`,
     buttonLink: 'https://hebertryann.github.io/gobarberr/',
     stacks: ['Reactjs - ', 'Typescript', 'Nodejs - ', 'React Native']
   },
@@ -50,7 +50,7 @@ const propjects = [
     description: `Website feito com intuito de consolidar meus conhecimentos em nextjs, 
     aprender mais sobre SSR(server-side-rendering) e SEO(search-engine-optmize).
     Refiz o design, e adicionei outras funcionabilidades`,
-    imageBackground: `/portfolio/assets/portfolio/assets/Captura da Web_5-7-2021_225458_hebertryann.github.io`,
+    imageBackground: `/portfolio/assets/kabumclone.jpeg`,
     buttonLink: 'https://kabum-clone.vercel.app',
     stacks: ['Nextjs - ', 'Typescript']
   },
