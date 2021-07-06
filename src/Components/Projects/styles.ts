@@ -96,6 +96,10 @@ export const ContainerImageProject = styled(motion.div)`
     justify-content: center;
     width: 100%;
     margin-top: 24px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 `;
 export const ProjectHeader = styled(motion.div)`
