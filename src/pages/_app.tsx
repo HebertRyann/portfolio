@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app'
+import Head from 'next/head';
 import Globalstyles from '../styles/Globalstyles';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 import { DarkTheme, LightTheme } from '../styles/stylesConfig';
@@ -11,8 +12,11 @@ function MyApp({ Component, pageProps }: AppProps) {
  
   return (
     <>
-        <Globalstyles/>
-        <Component {...pageProps} />
+      <Head>
+        <title>Hebert Ryan</title>
+      </Head>
+      <Globalstyles/>
+      <Component {...pageProps} />
     </>
     
   )

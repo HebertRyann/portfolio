@@ -87,7 +87,12 @@ export const ContainerImageProject = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 50%;
+  img {
+    width: 900px;
+    height: 500px;
+    object-fit: scale-down;
+  }
 
   @media(max-width: 1024px) {
     display: flex;
@@ -140,7 +145,7 @@ export const ContentProjectHeader = styled.div`
   display: flex;
   align-items: baseline;
   justify-content: space-evenly;
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   /* border: 1px solid red; */
   svg:nth-child(1) {

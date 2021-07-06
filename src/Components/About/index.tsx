@@ -188,7 +188,7 @@ const About: React.FC = () => {
                 }
               },
               'hidden': {
-                translateX: '120%',
+                translateX: '150%',
               },
           }}>
             <h1>Ferramentas</h1>
