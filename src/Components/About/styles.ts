@@ -261,7 +261,7 @@ export const ContentSkills = styled(motion.div)`
 `;
 
 export const ContainerTools = styled(motion.div)`
-  width: 100%;
+
   h1 {
     font-size: 3rem;
     font-family: ${Roboto};
