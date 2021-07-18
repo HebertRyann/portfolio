@@ -42,7 +42,7 @@ const propjects = [
     barbeiros.`,
     imageBackground: `/portfolio/assets/gobarber.jpeg`,
     buttonLink: 'https://hebertryann.github.io/gobarberr/',
-    stacks: ['Reactjs - ', 'Typescript', 'Nodejs - ', 'React Native']
+    stacks: ['Reactjs - ', 'Typescript - ', 'Nodejs - ', 'React Native']
   },
   { 
     title: 'KabumClone', 
