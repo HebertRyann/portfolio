@@ -7,13 +7,18 @@
 <h4 align="center">
     <a href="https://hebertryann.github.io/gobarberr/">Visite meu Portfolio</a>
 </h4>
-<p align="center"
-  Pagina pessoal criada com a inteçao de compartilhar e torna mais facil a interaçao do usuarios com meus projetos, alem de conhecer melhor minha historia.
+<p align="center">
+  Pagina pessoal criada com a inteçao de compartilhar e torna mais facil a interaçao do usuarios com meus projetos, alem de conhecer melhor minha historia.  
 </p>
 
 <h4 align="center"> 
-🚀 Portfolii Concluido ✔
+🚀 Portfolio Concluido ✔
 </h4>
+
+<h2 align="center">
+  <p>Demonstração</p> 
+  <img alt="Demonstração Portfolio" src="public/assets/portfolio.gif"/>
+</h2>
 
 
 <p align="center">
